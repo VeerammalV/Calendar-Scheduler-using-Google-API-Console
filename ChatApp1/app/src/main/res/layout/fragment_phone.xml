@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue"
+    tools:context=".sigin.PhoneFragment">
+
+    <View
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toTopOf="@id/cardView"
+        app:layout_constraintStart_toStartOf="@id/cardView"
+        app:layout_constraintBottom_toTopOf="@+id/verify_number"
+        app:layout_constraintEnd_toEndOf="@id/cardView"/>
+
+    <com.example.chatapp.fonts.PTSansBold
+        android:id="@+id/verify_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/verify_your_phone_number"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@id/cardView"
+        app:layout_constraintStart_toStartOf="@id/cardView"
+        app:layout_constraintBottom_toTopOf="@+id/mobileNumber"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <com.example.chatapp.fonts.PTBoldEditText
+        android:id="@+id/mobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_box"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_margin="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/cardView"
+        app:layout_constraintStart_toStartOf="@id/cardView"
+        app:layout_constraintBottom_toTopOf="@+id/generateOtp"
+        app:layout_constraintTop_toBottomOf="@+id/verify_number" />
+
+    <com.example.chatapp.fonts.PTSansRegular
+        android:id="@+id/generateOtp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:text="@string/generate_otp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintEnd_toEndOf="@id/cardView"
+        app:layout_constraintStart_toStartOf="@id/cardView"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/mobileNumber"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

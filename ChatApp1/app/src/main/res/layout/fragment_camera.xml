@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/camera_access"
+    android:background="@color/blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/cameraCard"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_corners"
+        android:layout_margin="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/loadedImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="60dp"
+                app:layout_constraintTop_toTopOf="@+id/cameraCard"
+                app:layout_constraintStart_toStartOf="@+id/cameraCard"
+                app:layout_constraintEnd_toEndOf="@+id/cameraCard"
+                app:layout_constraintBottom_toTopOf="@+id/userName"
+                android:src="@drawable/baseline_person_24"
+                android:scaleType="centerInside"
+                android:background="@drawable/round_grey"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/addPhoto"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_camera_alt_24"
+                    android:background="@drawable/round_blue"
+                    app:layout_constraintEnd_toEndOf="@+id/loadedImage"
+                    app:layout_constraintBottom_toBottomOf="@+id/loadedImage"
+                    android:padding="10dp" />
+
+                <com.example.chatapp.fonts.PTBoldEditText
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:maxLength="25"
+                    android:inputType="text"
+                    android:textColorHint="@color/grey"
+                    android:hint="@string/username"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="30dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/loadedImage"
+                    android:background="@drawable/edit_box" />
+
+            <com.example.chatapp.fonts.PTSansRegular
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_shape"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintStart_toStartOf="@+id/cameraCard"
+                app:layout_constraintEnd_toEndOf="@+id/cameraCard"
+                app:layout_constraintBottom_toBottomOf="@+id/cameraCard"
+                app:layout_constraintTop_toBottomOf="@id/userName"
+                android:text="@string/next" />
+
+
+    <View
+        android:id="@+id/profileSet"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_corners"
+        android:layout_margin="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/green_tick"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/round"
+        android:src="@drawable/baseline_done_24"
+        android:padding="15dp"
+        android:visibility="gone"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="@id/profileSet"
+        app:layout_constraintStart_toStartOf="@id/profileSet"
+        app:layout_constraintBottom_toTopOf="@+id/text_successful"
+        app:layout_constraintEnd_toEndOf="@id/profileSet"/>
+
+    <com.example.chatapp.fonts.PTSansBold
+        android:id="@+id/text_successful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_setup"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profileSet"
+        app:layout_constraintEnd_toEndOf="@id/profileSet"
+        app:layout_constraintStart_toStartOf="@id/profileSet"
+        app:layout_constraintTop_toBottomOf="@+id/green_tick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Chat App</string>
+    <string name="enter_your_mobile_number">Enter Your Mobile Number</string>
+    <string name="generate_otp">Generate OTP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="enter_your_otp">Enter your OTP</string>
+    <string name="phone_number_verified">Phone Number Verified</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="user_name">User Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="profile_setup">Profile Setup Successful</string>
+    <string name="verify_your_phone_number">Verify your Phone Number</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="username">Username</string>
+    <string name="take_or_select_image">Take or Select Image</string>
+    <string name="chat">Chat</string>
+    <string name="settings">Settings</string>
+    <string name="chats">Chats</string>
+    <string name="title_activity_test_main">TestMainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="type_your_message">  Type your message...</string>
+    <string name="schedule_later">Schedule later</string>
+    <string name="send_now">Send Now</string>
+    <string name="server_client_id">420812747377-uonbv4kb12v5oagd1bd6cpqek77u5k0i.apps.googleusercontent.com</string>
+    <string name="calendar">Calendar</string>
+    <string name="scheduled_messages">Scheduled Messages</string>
+    <string name="schedule_Later">Schedule Later</string>
+    <string name="_0">0</string>
+
+</resources>
